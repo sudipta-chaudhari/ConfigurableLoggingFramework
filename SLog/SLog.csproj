@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>SLog</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ApplicationType.cs" />
+    <Compile Remove="DatabaseLogger.cs" />
+    <Compile Remove="FileLogger.cs" />
+    <Compile Remove="ILog.cs" />
+    <Compile Remove="LoggerFactory.cs" />
+    <Compile Remove="LoggerType.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SLogConfig\SLogConfig.csproj">
+      <Private>true</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>
